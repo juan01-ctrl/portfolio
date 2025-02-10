@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { ArrowRight, Code, Database, Layout, Server } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -61,16 +62,16 @@ const Index = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <motion.div variants={itemVariants} className="mb-6">
-            <span className="text-sm font-medium text-primary/60">Full Stack Developer</span>
+            <span className="text-sm font-medium text-primary/60">Webflow Expert & Full Stack Developer</span>
           </motion.div>
           <motion.h1
             variants={itemVariants}
             className="text-4xl md:text-6xl font-bold mb-6 text-gradient leading-tight"
           >
-            Building Complete Digital Solutions
+            Crafting Beautiful Webflow Experiences
           </motion.h1>
           <motion.p variants={itemVariants} className="text-lg text-primary/80 mb-8">
-            I craft seamless experiences from front-end to back-end, bringing your vision to life
+            I create stunning, responsive websites with Webflow while leveraging full-stack capabilities for custom solutions
           </motion.p>
           <motion.div variants={itemVariants}>
             <a
@@ -97,18 +98,18 @@ const Index = () => {
             {[
               {
                 icon: Layout,
-                title: "Frontend Development",
-                description: "Responsive and interactive user interfaces with modern frameworks",
+                title: "Webflow Development",
+                description: "Custom Webflow websites with stunning animations and interactions",
+              },
+              {
+                icon: Code,
+                title: "Custom Solutions",
+                description: "Integration of custom code and third-party services with Webflow",
               },
               {
                 icon: Server,
-                title: "Backend Development",
-                description: "Scalable server architectures and robust API development",
-              },
-              {
-                icon: Database,
-                title: "Database Design",
-                description: "Efficient data modeling and database optimization",
+                title: "Full Stack Integration",
+                description: "Seamless connection between Webflow and backend services",
               },
             ].map((service, index) => (
               <motion.div
@@ -136,10 +137,10 @@ const Index = () => {
             className="max-w-2xl mx-auto mb-16 text-center"
           >
             <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold mb-4">
-              Featured Projects
+              Featured Webflow Projects
             </motion.h2>
             <motion.p variants={itemVariants} className="text-primary/60">
-              A selection of my recent work in web development and animation
+              A showcase of my best Webflow websites and custom integrations
             </motion.p>
           </motion.div>
 
@@ -160,8 +161,8 @@ const Index = () => {
                 <div className="aspect-video bg-muted rounded-2xl" />
                 <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-xl font-semibold mb-2">Project {project}</h3>
-                    <p className="text-white/80 mb-4">Web Development / Animation</p>
+                    <h3 className="text-xl font-semibold mb-2">Webflow Project {project}</h3>
+                    <p className="text-white/80 mb-4">Custom Design / Animations</p>
                     <a
                       href="#"
                       className="inline-flex items-center text-sm font-medium text-white hover:text-accent transition-colors"
@@ -273,10 +274,10 @@ const Index = () => {
             className="max-w-xl mx-auto text-center"
           >
             <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold mb-4">
-              Let's Work Together
+              Let's Create Something Amazing
             </motion.h2>
             <motion.p variants={itemVariants} className="text-primary/60 mb-8">
-              Have a project in mind? I'd love to help bring it to life.
+              Have a Webflow project in mind? I'd love to help bring it to life with custom solutions.
             </motion.p>
             <motion.div variants={itemVariants}>
               <a
