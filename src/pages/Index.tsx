@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { ArrowRight, Code, GitBranch, Layout } from "lucide-react";
+import { ArrowRight, Code, Database, Layout, Server } from "lucide-react";
 
 const Index = () => {
   const containerVariants = {
@@ -35,16 +35,16 @@ const Index = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <motion.div variants={itemVariants} className="mb-6">
-            <span className="text-sm font-medium text-primary/60">Webflow Developer</span>
+            <span className="text-sm font-medium text-primary/60">Full Stack Developer</span>
           </motion.div>
           <motion.h1
             variants={itemVariants}
             className="text-4xl md:text-6xl font-bold mb-6 text-gradient leading-tight"
           >
-            Crafting Digital Experiences Through Motion
+            Building Complete Digital Solutions
           </motion.h1>
           <motion.p variants={itemVariants} className="text-lg text-primary/80 mb-8">
-            I bring designs to life with seamless animations and intuitive interactions
+            I craft seamless experiences from front-end to back-end, bringing your vision to life
           </motion.p>
           <motion.div variants={itemVariants}>
             <a
@@ -71,18 +71,18 @@ const Index = () => {
             {[
               {
                 icon: Layout,
-                title: "Webflow Development",
-                description: "Custom websites built with clean code and smooth animations",
+                title: "Frontend Development",
+                description: "Responsive and interactive user interfaces with modern frameworks",
               },
               {
-                icon: Code,
-                title: "Custom Solutions",
-                description: "Tailored functionality to meet your specific needs",
+                icon: Server,
+                title: "Backend Development",
+                description: "Scalable server architectures and robust API development",
               },
               {
-                icon: GitBranch,
-                title: "Version Control",
-                description: "Organized development process with proper versioning",
+                icon: Database,
+                title: "Database Design",
+                description: "Efficient data modeling and database optimization",
               },
             ].map((service, index) => (
               <motion.div
