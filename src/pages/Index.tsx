@@ -304,6 +304,16 @@ const Index = () => {
           </motion.div>
         </div>
       </section >
+      <footer className="bg-black p-6">
+        <div className="flex gap-4 w-full align-middle justify-end">
+          <a href="https://www.linkedin.com/in/juan-ierace/" target="_blank" >
+            <img src="./Linkedin.svg" alt="linkedin" className="w-10" />
+          </a>
+          <a href="https://github.com/juan01-ctrl" target="_blank">
+            <img src="./Github.svg" alt="github" className="w-10" />
+          </a>
+        </div>
+      </footer>
     </div >
   );
 };
