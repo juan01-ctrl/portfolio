@@ -88,8 +88,8 @@ const Index = () => {
           variants={containerVariants}
           className="max-w-4xl mx-auto text-center relative z-10"
         >
-          <motion.div variants={itemVariants} className="mb-6">
-            <span className="text-sm font-bold text-primary/60 ">Webflow Expert & Full Stack Developer</span>
+          <motion.div variants={itemVariants} className="mb-2">
+            <span className="text-lg font-bold text-blue-700 ">Webflow Expert & Full Stack Developer</span>
           </motion.div>
           <motion.h1
             variants={itemVariants}
