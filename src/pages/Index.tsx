@@ -25,8 +25,18 @@ const Index = () => {
     },
   });
 
-  const onSubmit = (data: z.infer<typeof contactFormSchema>) => {
-    toast.success("Message sent successfully!");
+  const onSubmit = async (data: z.infer<typeof contactFormSchema>) => {
+
+
+    fetch('https://formspree.io/f/xldgweke', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
+
+    toast.success("Message sent successfully!")
     form.reset();
   };
 
@@ -304,16 +314,19 @@ const Index = () => {
           </motion.div>
         </div>
       </section >
-      <footer className="bg-black p-6">
-        <div className="flex gap-4 w-full align-middle justify-end">
-          <a href="https://www.linkedin.com/in/juan-ierace/" target="_blank" >
-            <img src="./Linkedin.svg" alt="linkedin" className="w-10" />
-          </a>
-          <a href="https://github.com/juan01-ctrl" target="_blank">
-            <img src="./Github.svg" alt="github" className="w-10" />
-          </a>
+      <footer className="bg-black p-4">
+        <div className="flex gap-4 w-full items-center justify-between  container">
+          <h2 className="text-white mb-0">Juan Ierace</h2>
+          <div className="flex gap-4">
+            <a href="https://www.linkedin.com/in/juan-ierace/" target="_blank" className="hover:-translate-y-1 transition-transform duration-300 ease-out py-2" >
+              <img src="./Linkedin.svg" alt="linkedin" className="w-8" />
+            </a>
+            <a href="https://github.com/juan01-ctrl" target="_blank" className="hover:-translate-y-1 transition-transform duration-300 ease-out py-2">
+              <img src="./Github.svg" alt="github" className="w-8" />
+            </a>
+          </div>
         </div>
-      </footer>
+      </footer >
     </div >
   );
 };
