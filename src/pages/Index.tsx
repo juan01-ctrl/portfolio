@@ -86,24 +86,24 @@ const Index = () => {
           initial="hidden"
           animate="visible"
           variants={containerVariants}
-          className="max-w-4xl mx-auto text-center relative z-10"
+          className="mx-auto text-center relative z-10"
         >
           <motion.div variants={itemVariants} className="mb-2">
             <span className="text-lg font-bold text-blue-700 ">Webflow Expert & Full Stack Developer</span>
           </motion.div>
           <motion.h1
             variants={itemVariants}
-            className="text-4xl md:text-7xl font-bold mb-6 text-gradient md:leading-snug"
+            className="text-4xl md:text-8xl font-bold mb-6 text-gradient md:leading-snug "
           >
-            Crafting Beautiful Webflow Experiences
+            Crafting Beautiful <br />Webflow Experiences
           </motion.h1>
-          <motion.p variants={itemVariants} className="text-lg text-primary/80 mb-8 font-semibold">
+          <motion.p variants={itemVariants} className="text-xl text-primary/80 mb-8 font-semibold">
             I create stunning, responsive websites with Webflow while leveraging full-stack capabilities for custom solutions
           </motion.p>
           <motion.div variants={itemVariants}>
             <a
               href="#work"
-              className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-xl"
             >
               View My Work
               <ArrowRight className="ml-2 h-4 w-4" />
