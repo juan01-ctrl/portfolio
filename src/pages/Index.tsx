@@ -187,10 +187,10 @@ const Index = () => {
             className="max-w-2xl mx-auto mb-16 text-center"
           >
             <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold mb-4">
-              Featured Webflow Projects
+              Own Projects
             </motion.h2>
             <motion.p variants={itemVariants} className="text-primary/60">
-              A showcase of my best Webflow websites and custom integrations
+              A selection of our best web projects and custom digital solutions.
             </motion.p>
           </motion.div>
 
