@@ -103,7 +103,7 @@ const Index = () => {
           </motion.div>
           <motion.h1
             variants={itemVariants}
-            className="text-4xl md:text-8xl font-bold mb-6 text-gradient md:leading-snug "
+            className="text-4xl text-primary md:text-8xl font-bold mb-6 text-gradient md:leading-snug "
           >
             Crafting Beautiful <br />Webflow Experiences
           </motion.h1>
