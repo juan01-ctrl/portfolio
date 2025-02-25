@@ -15,6 +15,7 @@ const contactFormSchema = z.object({
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
+
 const Index = () => {
   const form = useForm<z.infer<typeof contactFormSchema>>({
     resolver: zodResolver(contactFormSchema),
@@ -187,7 +188,7 @@ const Index = () => {
             className="max-w-2xl mx-auto mb-16 text-center"
           >
             <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold mb-4">
-              Own Projects
+              Our Projects
             </motion.h2>
             <motion.p variants={itemVariants} className="text-primary/60">
               A selection of our best web projects and custom digital solutions.
